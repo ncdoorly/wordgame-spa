@@ -5,6 +5,10 @@ const WordSchema = new Schema({
     category: {
         type : String,
         required: true
+    },
+    word: {
+        type: Array,
+        required: true
     }
 });
 

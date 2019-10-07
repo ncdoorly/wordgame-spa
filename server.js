@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 
 const words = require('./routes/api/words')
+const word = require('./routes/api/word')
 
 const app = express();
 //Bodyparser middleware 
@@ -19,6 +20,8 @@ mongoose
 
 //Use routes
 app.use('/api/words', words)
+app.use('/api/word', word)
+
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server started on port ${port}`))
