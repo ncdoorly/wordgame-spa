@@ -18,7 +18,7 @@ class App extends Component{
   handleClick = (e) => {
     axios.get('/api/word')
     .then( (response) => {
-      console.log(response);
+      //console.log(response);
       this.setState({
         word : response.data.word
       });
