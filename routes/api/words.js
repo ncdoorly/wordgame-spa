@@ -1,3 +1,4 @@
+//TODO: remove this words.js file, unused by application
 const express = require('express')
 const router = express.Router();
 

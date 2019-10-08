@@ -5,7 +5,6 @@ class Letter extends Component {
 
    getStyle = () => {
        return {
-        display: 'inline-block',
         visibility: this.props.letter.wasGuessed ? 'visible' : 'hidden'
     }
    } 
